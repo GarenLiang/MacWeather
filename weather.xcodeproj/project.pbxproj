@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4904407F1EC57E5300BD5C81 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4904407E1EC57E5300BD5C81 /* Weather.swift */; };
 		496B64F11EC419A0005BC22D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B64F01EC419A0005BC22D /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4904407E1EC57E5300BD5C81 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		496B64ED1EC419A0005BC22D /* weather */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = weather; sourceTree = BUILT_PRODUCTS_DIR; };
 		496B64F01EC419A0005BC22D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				496B64F01EC419A0005BC22D /* main.swift */,
+				4904407E1EC57E5300BD5C81 /* Weather.swift */,
 			);
 			path = weather;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4904407F1EC57E5300BD5C81 /* Weather.swift in Sources */,
 				496B64F11EC419A0005BC22D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +256,7 @@
 				496B64F61EC419A0005BC22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
