@@ -28,7 +28,7 @@ if CommandLine.arguments.count <= 1 {
         }
     }
 }
-print("The Location: \(location)")
+print("Location: \(location)")
 
 while !weather.finished {
     if !weather.apiLaunched {
