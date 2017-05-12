@@ -31,6 +31,21 @@ class Weather {
                         let json = try! JSON(data: data!)
                         
                         if let temp = json["query"]["results"]["channel"]["item"]["condition"]["temp"].string {
+                            let forecast = json["query"]["results"]["channel"]["item"]["forecast"][0]["text"].string
+                            if forecast == "Sunny" {
+                                print("☀️ 😎 🔆")
+                            } else if forecast == "Rain" {
+                                print("☔️ 💦 😵")
+                            } else if forecast == "Partly Cloudy" ||
+                                forecast == "Mostly Cloudy" ||
+                                forecast == "Cloudy" {
+                                print("🌤 🌥 ☁️")
+                            } else if forecast == "Snow" {
+                                print("❄️ ☃️ ☃")
+                            } else if forecast == "Breezy" {
+                                print("💨 🍃 🍭")
+                            }
+                            
                             print("Temp: \(temp)°F")
                         }
                     }
