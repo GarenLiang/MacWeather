@@ -25,7 +25,6 @@ class Weather {
                 if error != nil {
                     print("Api Error")
                 } else {
-                    print("It Works")
                     
                     if data != nil {
                         
