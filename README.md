@@ -3,3 +3,4 @@
 * Command Line Weather
 
 ![image](https://github.com/GarenLiang/MacWeather/blob/master/Snap2.gif)
+![image](https://github.com/GarenLiang/MacWeather/blob/master/Balsamiq.png)
