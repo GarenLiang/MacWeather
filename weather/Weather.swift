@@ -33,20 +33,67 @@ class Weather {
                         if let temp = json["query"]["results"]["channel"]["item"]["condition"]["temp"].string {
                             let forecast = json["query"]["results"]["channel"]["item"]["forecast"][0]["text"].string
                             if forecast == "Sunny" {
+                                print("Sunny")
                                 print("☀️ 😎 🔆")
                             } else if forecast == "Rain" {
+                                print("Rain")
                                 print("☔️ 💦 😵")
                             } else if forecast == "Partly Cloudy" ||
                                 forecast == "Mostly Cloudy" ||
                                 forecast == "Cloudy" {
+                                print("Cloudy")
                                 print("🌤 🌥 ☁️")
                             } else if forecast == "Snow" {
+                                print("Snow")
                                 print("❄️ ☃️ ☃")
                             } else if forecast == "Breezy" {
+                                print("Breezy")
+                                print("💨 🍃 🍭")
+                            }
+                            print("Temp: \(temp)°F")
+                            print("---------------")
+                            print("Next Day")
+                            let forecast2 = json["query"]["results"]["channel"]["item"]["forecast"][1]["text"].string
+                            if forecast2 == "Sunny" {
+                                print("Sunny")
+                                print("☀️ 😎 🔆")
+                            } else if forecast2 == "Rain" {
+                                print("Rain")
+                                print("☔️ 💦 😵")
+                            } else if forecast2 == "Partly Cloudy" ||
+                                forecast2 == "Mostly Cloudy" ||
+                                forecast2 == "Cloudy" {
+                                print("Cloudy")
+                                print("🌤 🌥 ☁️")
+                            } else if forecast2 == "Snow" {
+                                print("Snow")
+                                print("❄️ ☃️ ☃")
+                            } else if forecast2 == "Breezy" {
+                                print("Breezy")
+                                print("💨 🍃 🍭")
+                            }
+                            print("---------------")
+                            print("Next Next Day")
+                            let forecast3 = json["query"]["results"]["channel"]["item"]["forecast"][1]["text"].string
+                            if forecast3 == "Sunny" {
+                                print("Sunny")
+                                print("☀️ 😎 🔆")
+                            } else if forecast3 == "Rain" {
+                                print("Rain")
+                                print("☔️ 💦 😵")
+                            } else if forecast3 == "Partly Cloudy" ||
+                                forecast3 == "Mostly Cloudy" ||
+                                forecast3 == "Cloudy" {
+                                print("Cloudy")
+                                print("🌤 🌥 ☁️")
+                            } else if forecast3 == "Snow" {
+                                print("Snow")
+                                print("❄️ ☃️ ☃")
+                            } else if forecast3 == "Breezy" {
+                                print("Breezy")
                                 print("💨 🍃 🍭")
                             }
                             
-                            print("Temp: \(temp)°F")
                         }
                     }
                 }
